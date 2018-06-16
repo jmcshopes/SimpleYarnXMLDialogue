@@ -1,0 +1,180 @@
+title: Start
+tags: 
+colorID: 0
+position: 833,155
+---
+*The old woman sits by the window, looking out at the garden. She tuts quietly at something she sees, but a serene smile soon returns to her face.*
+*You close the door and the noise rouses her from her reverie.*
+
+Oh sorry dear, I didn't see you there. Did Orson send you about the clematis vines?
+
+[[(if value lessthan this)I'm afraid not. I wanted to ask you some questions.|VineQuestions]]
+[[(if value equalto this)Um, yes, Orson sent me. Though he wasn't clear what needed doing with them.|YesForVines]]
+[[(if SomethingHappened)No he didn't. Sorry.|NoVines]]
+===
+title: VineQuestions
+tags: 
+colorID: 0
+position: 1497,424
+---
+...And I wanted my vines trimming. *She eyes you up and down.* You look like you have two working hands and at least half a brain. You can ask me questions while we take care of them.
+
+[[Oh, okay|CutVines]]
+[[You sure you want to place their lives in my hands?|InMyHands]]
+===
+title: YesForVines
+tags: 
+colorID: 0
+position: 996,695
+---
+I love him well, but he never had an eye for details my Orson. I hope you do though, as they're tender plants. You have some secateurs?
+
+[[Um, no, sorry.|NoSeqateurs]]
+[[Some what?|SecateursWhat]]
+===
+title: NoVines
+tags: 
+colorID: 0
+position: 426,656
+---
+*She clicks her tongue drily in mock annoyance.* 
+Oh that won't do at all. No, the kindness of the stranger forgives the sins of the son. You look like you have two working hands and at least half a brain. Want to earn a few coins?
+
+[[Coins are good.|CoinsGood]]
+[[I don't think you'd want their lives in my hands, to be honest.|InMyHands]]
+[[Not really, I actually wanted to ask you some questions.|MyQuestions]]
+===
+title: NoSeqateurs
+tags: 
+colorID: 0
+position: 1204,1035
+---
+A gardener without seqateurs? Well birds of a feather, I suppose. You and Orson must get along fine.
+
+[[Sorry, I completely forgot. I like to think I'm not as bad as him though.|SecateursDrawer]]
+[[Okay, I'm going to be straight with you. I'm not actually a gardener.|NotAGardener]]
+===
+title: SecateursWhat
+tags: 
+colorID: 0
+position: 822,989
+---
+Secateurs, my boy! To cut the clematis! What kind of gardener are you?
+
+[[A pretty terrible one, if I'm being honest. But I'm cheap|SecateursDrawer]]
+[[Oh, Secateurs! I thought you said saboteurs! What with the uprising and... *mumble mumble*|Saboteurs]]
+[[Um, I'm not actually. Sorry.|NotAGardener]]
+===
+title: NotAGardener
+tags: 
+colorID: 0
+position: 1450,762
+---
+Not a gardener! I'll be honest, I didn't expect the winner of the flower show when I asked Orson for a gardener, but I didn't think it was setting the bar too high to expect, you know, a gardener...
+
+[[Orson didn't send me. I'm afraid I lied.|Confess]]
+[[I suppose I'm something of a disappointment|Disappointment]]
+[[Uh yes, sorry about that|SorryAboutThat]]
+===
+title: Confess
+tags: 
+colorID: 0
+position: 1532,1328
+---
+You're afraid? Afraid of lying? Well, the simplest thing to me it would seem is not to do it then.
+
+Still, the vines need trimming and you've an honest looking pair of hands, even if honesty's lacking upstairs. Grab the secateurs out of that drawer there and I'll show you what to do.
+
+[[Oh, okay|CutVines]]
+[[But what about my questions?|MyQuestions]]
+[[You sure you want to place their lives the hands of a rogue?|InMyHands]]
+===
+title: SecateursDrawer
+tags: 
+colorID: 0
+position: 972,1293
+---
+Oh well. Better the devil you know. I think there's some old secateurs in the drawer there. They're dull as your wits, but they'll have to do.
+
+[[*Get the secateurs from the drawer.*|GetSecateurs]]
+[[I'm really sorry, I'm afraid I lied about being a Gardener, I'm actually a reporter.|Confess]]
+===
+title: Saboteurs
+tags: 
+colorID: 0
+position: 643,1559
+---
+What on earth are you talking about?
+
+[[Um, I don't know. I'm afraid I lied, but I'm not very good at it. Orson didn't send me.|Confess]]
+===
+title: InMyHands
+tags: 
+colorID: 0
+position: 1974,796
+---
+Eh, they'll do. No other hands hanging around here. Now grab the old secateurs from that drawer there and we'll get started.
+
+[[*Get the secateurs.*|CutVines]]
+===
+title: CutVines
+tags: 
+colorID: 0
+position: 2179,1513
+---
+You follow her into a garden that is far larger than it looked approaching from the front. Great dahlias and rhodedendrons crowd the path and a bench just too small for two sits under a honeysuckle bush.
+The sweet scent of nectar fills the air as you follow the hobbling figure towards the vines outside the window. You readjust the secateurs in your grip, not entirely sure how to make them open.
+===
+title: MyQuestions
+tags: 
+colorID: 0
+position: 1804,1236
+---
+If you've got anything to ask, you can ask it while we cut the vines back. I assume your hands and tongue can work at the same time?
+
+[[Yes ma'am.|CutVines]]
+[[Okay then.|CutVines]]
+===
+title: CoinsGood
+tags: 
+colorID: 0
+position: 373,1716
+---
+Excellent! A soul after my own heart! Come on then, grab the secateurs out of that drawer and we can take a look.
+
+[[Alright.|CutVines]]
+===
+title: GetSecateurs
+tags: 
+colorID: 0
+position: 1235,1500
+---
+Okay, let me show you where the problem is.
+
+[[*Follow her outside*|CutVines]]
+===
+title: Disappointment
+tags: 
+colorID: 0
+position: 1699,987
+---
+Don't give me that puppy dog crap, I won't have it. My first husband was a disappointment! You're an opportunity. Grab the secateurs from the drawer there and I'll show you what to do.
+
+[[*Grab the secateurs and follow her*|CutVines]]
+===
+title: SorryAboutThat
+tags: 
+colorID: 0
+position: 1467,1036
+---
+Well it can't be helped. Let's see what we can do with you anyway. Grab the secateurs from the drawer there and I'll show you what to do.
+
+[[*Grab the secateurs and follow her*|CutVines]]
+===
+title: Node19
+tags: 
+colorID: 0
+position: 1307,949
+---
+Empty Text
+===
